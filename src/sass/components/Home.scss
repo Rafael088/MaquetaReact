@@ -1,0 +1,303 @@
+@use'../base/colors.scss' as base;
+
+.contHome{
+    width: 100%;
+    height: 100vh;
+    background-color: base.$color-Fifth;
+    overflow: auto;
+    background-image: url('../../img/wave.svg');
+    background-repeat: no-repeat;
+    .contBody{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .contInfo{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            .contTitle{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                span{
+                    display: block;
+                    font-size: 40px;
+                    white-space: nowrap;
+                    border-right: 4px solid;
+                    width: 15ch;
+                    animation: typing 2s steps(15), blink .5s infinite step-end alternate;
+                    overflow: hidden;
+                }
+            }
+            .contCard{
+                width: 40%;
+                height: 50%;
+                margin-right: 10%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .card{
+                    width: 40%;
+                    height: 40%;
+                    border: 2px solid base.$color-Text;
+                    animation: animLogo1 4s infinite;
+                }
+                .cardA{
+                    width: 20%;
+                    height: 10%;
+                    background-color: base.$color-Text;
+                    animation: animLogo2 4s infinite;
+                }
+            }
+        }
+    } 
+    .contContent{
+        width: 100%;
+        height: 110%;
+        background-color: base.$color-Text;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .contCard{
+            width: 30%;
+            height: 90%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; 
+            transition: all 0.2s;
+            
+            .contImg{
+                width: 40%;
+                height: 20%;
+                margin-top: 50px;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.5);
+                animation: animInsite 0.9s ease;
+                background-image: url('../../img/ben-sweet-2LowviVHZ-E-unsplash\ \(1\).jpg');
+                background-size: 200%;
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+            .contCardInfo{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                transition: all 0.2s;
+                
+                b{
+                    color: white;
+                }
+                p{
+                    color: white;
+                    margin-top: 10px;
+                }
+                
+                .contBar{
+                    width: 100%;
+                    height: 20%;
+                    display: none;
+                    transition: all 0.4s;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .icon{
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .contBtns{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                .iconBtn{
+                    width: 20%;
+                    height: 50%;
+                    color: rgba(255, 0, 0, 0.5);
+                }
+                .t{
+                    color: base.$color-Fourth;
+                }
+            }
+            
+        }
+        .contRight{
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .contBody{
+                width: 20%;
+                height: 10%;
+                border-radius: 50%;
+                background-color: base.$color-Fifth;
+                transition: all 0.4s;
+                border: 1px solid transparent;
+                animation: animFloat 1s infinite;
+                &:hover{
+                    width: 100%;
+                    height: 90%;
+                    border-radius: 0%;
+                    animation: none;
+                    background-image: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                &:hover .icon{
+                    display: none;
+                }
+                &:hover .contContect{
+                    display: flex;
+                }
+                .icon{
+                    width: 80%;
+                    height: 80%;
+                    color: base.$color-Fourth;
+                    animation: animFloat 1s infinite;
+                }
+                .contContect{
+                    width: 90%;
+                    height: 10%;
+                    background-color: rgb(74, 110, 141);
+                    display: none;
+                }
+            }
+        }
+        .contLeft{
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            .contBody{
+                width: 20%;
+                height: 10%;
+                border-radius: 50%;
+                background-color: base.$color-Fifth;
+                transition: all 0.4s;
+                
+                
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid transparent;
+                &:hover{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0%;
+                    animation: none;
+                    background-image: none;
+                }
+                &:hover .icon{
+                    display: none;
+                }
+                .icon{
+                    width: 80%;
+                    height: 80%;
+                    color: base.$color-Fourth;
+                    animation: animFloat 1s infinite;
+                }
+            }
+            
+        }
+        
+    }
+    .contFooter{
+        width: 100%;
+        height: 100%;
+        background-color: base.$color-Fifth;
+    }
+    
+}
+.contHome::-webkit-scrollbar {
+    display: none;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes blik {
+    50%{
+        border: transparent;
+    }
+}
+@keyframes animFloat {
+   0%{
+    transform: rotate3d(0.5turn);
+   }
+}
+@keyframes animLogo1 {
+    0%{
+        width: 40%;
+        height: 50%;
+        
+    }
+    30%{
+        transform: rotate(0.5turn);
+    }
+    50%{
+        width: 10%;
+        height: 30%;
+    }
+    70%{
+        transform: rotate(0turn);
+    }
+    100%{
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@keyframes animLogo2 {
+    0%{
+        width: 20%;
+        height: 10%;
+    }
+    30%{
+        transform: rotate(0.5turn);
+    }
+    50%{
+        width: 0%;
+        height: 0%;
+    }
+    70%{
+        transform: rotate(0turn);
+    }
+    100%{
+        width: 20%;
+        height: 10%;
+    }
+}
+@keyframes animInsite {
+    0%{
+        transform: translate(10%);
+    }
+}

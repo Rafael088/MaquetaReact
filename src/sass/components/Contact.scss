@@ -1,0 +1,9 @@
+@use'../base/colors.scss' as base;
+
+.contContact{
+    width: 100%;
+    height: 100vh;
+    background-color: base.$color-Fifth;
+    background-image: url('../../img/wave.svg');
+    background-repeat: no-repeat;
+}
